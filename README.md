@@ -1,7 +1,7 @@
-##Getting and Cleaning Data Course Project
-#Purpose
+#Getting and Cleaning Data Course Project
 
-#The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit:
+#Purpose
+The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit:
 
 #a tidy data set as described below;
 #a link to a Github repository with your script for performing the analysis; and
