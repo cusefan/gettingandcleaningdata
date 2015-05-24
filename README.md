@@ -10,19 +10,19 @@ The purpose of this project is to demonstrate your ability to collect, work with
 ##Objectives
 
 The run_analysis.R script performs the following:
-1.  Merges the training and the test sets to create one data set.
-2.  Extracts only the measurements on the mean and standard deviation for each measurement.
-3.  Uses descriptive activity names to name the activities in the data set
-4.  Appropriately labels the data set with descriptive activity names.
-5.  Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+- 1.  Merges the training and the test sets to create one data set.
+-   - It sets the working directrory to the same location with the working files.
+-   - It loads the train and test data sets and combineds them into one data frame. This is done using rbind.
+- 2.  Extracts only the measurements on the mean and standard deviation for each measurement.
+- - It extracts just the mean and standard deviation from the features combined data set. This is done using grep
+- 3.  Uses descriptive activity names to name the activities in the data set
+- - After cleaning the column names, these are applied to the combined data frame.
+- - After loading the activities data set, it converts it to lower case using tolower and removes underscore using gsub - function and subject column names are named for the combinedLabel and combinedSubject data sets.
+- 4.  Appropriately labels the data set with descriptive activity names.
+- - The three data sets then are merged. 
+- - A the combined file is saved as a txt file into the same working directory, named combined.txt.
+- 5.  Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+- - The mean of activities and subjects are created into a separate tidy data set which is exported into the same working directory and is named average.txt.
 
-run_analysis.R
 
-- It sets the working directrory to the same location with the working files.
-- It loads the train and test data sets and combineds them into one data frame. This is done using rbind.
-- It extracts just the mean and standard deviation from the features combined data set. This is done using grep.
-- After cleaning the column names, these are applied to the combined data frame.
-- After loading the activities data set, it converts it to lower case using tolower and removes underscore using gsub - function and subject column names are named for the combinedLabel and combinedSubject data sets.
-- The three data sets then are merged. 
-- A the combined file is saved as a txt file into the same working directory, named combined.txt.
-- The mean of activities and subjects are created into a separate tidy data set which is exported into the same working directory and is named average.txt.
+
